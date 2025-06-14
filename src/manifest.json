@@ -43,7 +43,8 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "update_url": "https://raw.githubusercontent.com/franktankbank/tab-extract/refs/heads/main/update/update.json"
+      "update_url": "https://raw.githubusercontent.com/franktankbank/tab-extract/refs/heads/main/update/update.json",
+      "id": "{9ff12cf6-e2d3-42f8-9f25-16e8a2ac1762}"
     }
   }
 }
