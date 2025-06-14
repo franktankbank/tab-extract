@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Import/Extract Active Tab URLs</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      #urlList {
+        margin-top: 10px;
+      }
+
+      input[type="file"] {
+        width: 100%;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Save Active Tab URLs</h3>
+    <button id="saveButton">Save URLs to Text File</button>
+
+    <div id="urlList"></div>
+
+    <h3>Import URLs</h3>
+    <input type="file" id="importFile" />
+    <button id="importButton">Import URLs from File</button>
+
+    <script src="sidebar.js"></script>
+  </body>
+
+</html>
