@@ -7,9 +7,13 @@
     "tabs",
     "downloads"
   ],
+  "browser_action": {
+    "default_title": "Toggle Sidebar"
+  },
   "sidebar_action": {
     "default_title": "Tab URL Importer/Exporter",
     "default_panel": "sidebar/sidebar.html",
+    "open_at_install": false,
     "default_icon": {
       "16": "images/icon-16.png",
       "32": "images/icon-32.png",
@@ -31,15 +35,6 @@
       "background.js"
     ],
     "persistent": true
-  },
-  "commands": {
-    "toggle-sidebar": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+Y",
-        "mac": "Command+Shift+Y"
-      },
-      "description": "Toggle the sidebar"
-    }
   },
   "browser_specific_settings": {
     "gecko": {

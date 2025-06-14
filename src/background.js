@@ -1,6 +1,13 @@
-// Add event listener for the 'toggle-sidebar' command. Triggered with 'ctrl + shift + Y'
-browser.commands.onCommand.addListener((command) => {
-  if (command === "toggle-sidebar") {
+let sidebarOpen = false;
+
+browser.browserAction.onClicked.addListener(() => {
+  console.log("Extension icon clicked");
+
+  if (sidebarOpen) {
+    browser.sidebarAction.close();
+    sidebarOpen = false;
+  } else {
     browser.sidebarAction.open();
+    sidebarOpen = true;
   }
 });
